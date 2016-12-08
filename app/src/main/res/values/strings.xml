@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CriminalIntent</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="story_title_hint">Enter a title for the story.</string>
+    <string name="story_title_label">Title</string>
+    <string name="story_description_hint">This is a sample description</string>
+    <string name="story_details_label">Details</string>
+    <string name="story_solved_label">Solved</string>
+    <string name="search_view">Search</string>
+    <string name="splash_message">Kai and Ahmed</string>
+</resources>
