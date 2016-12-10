@@ -22,20 +22,22 @@ public class StoryLab {
         mStories = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
             Story story = new Story();
-            story.setTitle("Story #" + i);
-            story.setSolved(i % 2 == 0);
+            story.setmTitle("Story #" + i);
+            story.setmDescr("Description: " + i);
+            story.setmImage(context.getDrawable(R.drawable.smiley));
+//            story.setSolved(i % 2 == 0);
             mStories.add(story);
         }
     }
 
-    public List<Story> getStories() {
+    public ArrayList<Story> getStories() {
         return mStories;
     }
 
     public ArrayList<Story> searchStory(String s){
         ArrayList<Story> searchList = new ArrayList<>();
         for(int i=0; i<mStories.size(); i++){
-            if(mStories.get(i).getTitle().contains(s)){
+            if(mStories.get(i).getmTitle().contains(s)){
                 searchList.add(mStories.get(i));
             }
         }

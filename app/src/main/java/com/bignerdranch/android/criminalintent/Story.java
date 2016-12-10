@@ -1,14 +1,20 @@
 package com.bignerdranch.android.criminalintent;
 
+import android.graphics.drawable.Drawable;
+
 import java.util.Date;
 import java.util.UUID;
 
 public class Story {
 
+
+
     private UUID mId;
     private String mTitle;
     private String mDescr;
     private boolean mSolved;
+    private Drawable mImage;
+
 
     public Story() {
         mId = UUID.randomUUID();
@@ -20,11 +26,15 @@ public class Story {
         return mId;
     }
 
-    public String getTitle() {
+    public void setmId(UUID mId) {
+        this.mId = mId;
+    }
+
+    public String getmTitle() {
         return mTitle;
     }
 
-    public void setTitle(String title) {
+    public void setmTitle(String title) {
         mTitle = title;
     }
 
@@ -42,5 +52,13 @@ public class Story {
 
     public void setSolved(boolean solved) {
         mSolved = solved;
+    }
+
+    public Drawable getmImage() {
+        return mImage;
+    }
+
+    public void setmImage(Drawable mImage) {
+        this.mImage = mImage;
     }
 }
